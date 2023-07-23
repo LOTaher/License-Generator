@@ -1,5 +1,5 @@
 {
-  "name": "license-generator",
+  "name": "@lotaher/license-generator",
   "version": "1.0.0",
   "description": "Generate a license straight from your terminal",
   "main": "dist/index.js",
@@ -7,9 +7,11 @@
   "scripts": {
     "build": "tsc"
   },
+  "bin": "./dist/index.js",
   "keywords": [],
   "author": "Laith Taher",
   "license": "ISC",
+  "private": false,
   "devDependencies": {
     "@types/inquirer": "^9.0.3",
     "@types/node": "^20.4.4",

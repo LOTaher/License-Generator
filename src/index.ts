@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import inquirer from "inquirer";
+import inquirer, { Question } from "inquirer";
 import axios from "axios";
 import fs from "fs";
 
@@ -40,7 +40,7 @@ async function license() {
 
   license = licensePromp.license;
   if (license === "None") {
-    process.exit(1);
+    process.exit(0);
   } else {
     switch (license) {
       case "MIT License":
@@ -92,7 +92,7 @@ async function details() {
 }
 
 // Replace text in license
-async function replaceText(name, year) {
+async function replaceText(name: string, year: string) {
   licenseText = licenseText
     .replace(/\[year\]/g, year)
     .replace(/\[yyyy\]/g, year)
