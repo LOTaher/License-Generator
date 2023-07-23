@@ -1,0 +1,22 @@
+{
+  "name": "license-generator",
+  "version": "1.0.0",
+  "description": "Generate a license straight from your terminal",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "Laith Taher",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/inquirer": "^9.0.3",
+    "@types/node": "^20.4.4",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "inquirer": "^9.2.8"
+  }
+}
